@@ -8,24 +8,80 @@
 </head>
 <body>
     <header>
-        <h1>Aya Ahmed</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="logo">Aya Ahmed</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hi, I'm Aya Ahmed, a passionate software engineer with a focus on data science and machine learning.</p>
-        </section>
-    </main>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Innovative solutions in data science and software engineering</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Aya Ahmed, a dedicated and passionate software engineer with a strong background in data science and machine learning. My expertise includes a variety of programming languages and development frameworks, allowing me to create efficient and innovative solutions. I am currently pursuing my Bachelor's degree in Computer Science with a focus on Bioinformatics at Fayoum University.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project" onclick="window.open('https://github.com/your-username/project-one', '_blank')">
+                <h3>Breast Cancer Detection for Tumours</h3>
+                <p>A machine learning-based system for detecting malignant and benign tumours in breast tissue.</p>
+                <p><strong>Technologies:</strong> Python, CNN, Image Processing</p>
+                <p><strong>Year:</strong> 2024</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/your-username/project-two', '_blank')">
+                <h3>Pharmacy Website</h3>
+                <p>A web application for doctors to manage patient medication.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Year:</strong> 2023</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/your-username/flutter-projects', '_blank')">
+                <h3>Flutter Projects (ITi)</h3>
+                <p>Various projects developed during ITi winter training focusing on Flutter development.</p>
+                <p><strong>Technologies:</strong> Flutter, Dart</p>
+                <p><strong>Year:</strong> 2023</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/your-username/machine-learning-projects', '_blank')">
+                <h3>Machine Learning Projects (Codsoft)</h3>
+                <p>Five machine learning projects completed during Codsoft training.</p>
+                <p><strong>Technologies:</strong> Python, Machine Learning</p>
+                <p><strong>Year:</strong> 2023</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aya-ahmed">LinkedIn</a>
+            <a href="https://github.com/your-username">GitHub</a>
+        </div>
+    </section>
+    
     <footer>
         <p>&copy; 2024 Aya Ahmed. All rights reserved.</p>
     </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
